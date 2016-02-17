@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tab panel: use the guide</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/core.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/tabpanel.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <main>
+      <h1>Tab panel that follow the Authoring Practices Guide (APG)</h1>
+      <p>Follows the rules as defined in the <a href="http://w3c.github.io/aria/practices/aria-practices.html#tabpanel">APG: Tab panel</a>.</p>
+      
+      <blockquote cite="http://w3c.github.io/aria/practices/aria-practices.html#tabpanel">A tabbed interface component is a container for resources associated with a tab.</blockquote>
+      
+      <article>
+        <h2>With JavaScript enabled</h2>
+        <section data-role="tabinterface">
+          <ul role="tablist">
+            <li>
+              <button role="tab" aria-controls="tab-paciello-group" aria-selected="true">Paciello Group</button>
+            </li>
+            <li>
+              <button role="tab" aria-controls="tab-deque-systems">Deque Systems</button>
+            </li>
+            <li>
+              <button role="tab" aria-controls="tab-knowbility">Knowbility</button>
+            </li>
+          </ul>
+          <ul>
+            <li role="tabpanel" id="tab-paciello-group">
+              <p>We help achieve end-to-end accessibility in your organization’s websites, applications and processes. Our consulting services include accessibility testing and evaluation, WCAG/Section 508 compliance audits, VPAT analysis and production, training, user testing and research, design reviews and strategic planning to embed accessible user experience into all aspects of your product development lifecycle.</p>
+            </li>
+            <li role="tabpanel" id="tab-deque-systems" hidden>
+              <p>Digital accessibility is both our mission and our passion. For over fifteen years we have been helping major corporations, government agencies, and other organizations ensure that their websites and mobile apps are accessible to everyone. Every one of us at Deque, and some of us have been with the company since it was founded in 1999, cares deeply about making sure people with disabilities are able to fully enjoy the benefits of the web. Helping our customers grow their brands, be inclusive and provide all of their customers with the best possible digital customer experience gives us joy. No matter who you work with at Deque you can be confident that you are in skillful and caring hands.</p>
+            </li>
+            <li role="tabpanel" id="tab-knowbility" hidden>
+              <p>Access to web-based information and activities has never been more important. At Knowbility we strive every day to help our customers make the internet and other technologies accessible to people who are blind, visually impaired, hearing impaired, have mobility impairments and cognitive or learning disabilities. Our goal is to create a barrier-free world of information technology with universal access for all!</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      
+      <article>
+        <h2>Without JavaScript enabled</h2>
+        <section data-role="tabinterface">
+          <h3>Paciello Group</h3>
+          <p>We help achieve end-to-end accessibility in your organization’s websites, applications and processes. Our consulting services include accessibility testing and evaluation, WCAG/Section 508 compliance audits, VPAT analysis and production, training, user testing and research, design reviews and strategic planning to embed accessible user experience into all aspects of your product development lifecycle.</p>
+          <h3>Deque Systems</h3>
+          <p>Digital accessibility is both our mission and our passion. For over fifteen years we have been helping major corporations, government agencies, and other organizations ensure that their websites and mobile apps are accessible to everyone. Every one of us at Deque, and some of us have been with the company since it was founded in 1999, cares deeply about making sure people with disabilities are able to fully enjoy the benefits of the web. Helping our customers grow their brands, be inclusive and provide all of their customers with the best possible digital customer experience gives us joy. No matter who you work with at Deque you can be confident that you are in skillful and caring hands.</p>
+          <h3>Knowbility</h3>
+          <p>Access to web-based information and activities has never been more important. At Knowbility we strive every day to help our customers make the internet and other technologies accessible to people who are blind, visually impaired, hearing impaired, have mobility impairments and cognitive or learning disabilities. Our goal is to create a barrier-free world of information technology with universal access for all!</p>
+        </section>
+      </article>
+    </main>
+    
+    <script src="js/tabpanel.js"></script>
+  </body>
+</html>

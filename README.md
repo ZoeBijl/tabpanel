@@ -1,2 +1,2 @@
-# tabpanel
-Accessible tab panel
+# Tabpanel
+Accessible tab panel.
