@@ -83,6 +83,20 @@ pre {
   overflow-x: auto;
 }
 
+.note {
+    margin-inline: 0;
+    padding: 1rem;
+    border: 1px solid #ead247;
+    border-radius: 8px;
+    background: #ead24733;
+    > :first-child {
+        margin-block-start: auto;
+    }
+    > :last-child {
+        margin-block-end: auto;
+    }
+}
+
 @media (min-width: 40em) {
   blockquote,pre {
     margin-left:2rem;
